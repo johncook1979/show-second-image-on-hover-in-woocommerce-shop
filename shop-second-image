@@ -39,12 +39,17 @@ function my_img_hover_script(){
 ?>
 <script>
 	(function($) {
-    // When hovering the images trigger the hover function
+    		// When hovering the images trigger the hover function
 		$('li.product img').hover(function () {
 
-      // find the image to add an extra class to when hovering. The extra class will toggle on and off when entering and leaving hover mode
-			$(this).parent().find('.attachment-woocommerce_thumbnail').toggleClass("img_hover");
-
+			// find how many images are available.
+			var numProductImgs = $(this).parent().find('img').length;
+			
+			// find the image to add an extra class to when hovering. The extra class will toggle on and off when entering and leaving hover mode. Only apply if 2 images are available
+			if(numProductImgs >= 2){
+				$(this).parent().find('.attachment-woocommerce_thumbnail').toggleClass("result_hover");
+			}
+	
 
 		});
 	})( jQuery );
