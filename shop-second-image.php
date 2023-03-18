@@ -1,6 +1,11 @@
 <?php
 
 /**
+  * Add the below code to your child themne functions.php file
+  *
+*/
+
+/**
   * Add the second image to the shop page
   *
 */
