@@ -50,7 +50,6 @@ function my_img_hover_script(){
 				$(this).parent().find('.attachment-woocommerce_thumbnail').toggleClass("result_hover");
 			}
 	
-
 		});
 	})( jQuery );
 </script>
