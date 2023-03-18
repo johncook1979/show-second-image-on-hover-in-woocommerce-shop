@@ -1,0 +1,20 @@
+/**
+  * Add the following CSS to your theme css
+  *
+  * Your theme may have a different attachment class name for you image. 
+  *
+  * If the 2nd image is not showing or all appear behind the first product add a position of relative to the list item product. eg. li.product{position:relative;]
+  *
+*/
+
+/** Set the new image to a z-index of -1 so it appears behind the main image and a position of absolute to it moves behind it **/
+.second-product-img {
+  z-index:-1;
+  position:absolute
+}
+
+/** When image is hovered set the opacity to 0 so the second image is shown */
+.attachment-woocommerce_thumbnail.img_hover{
+  opacity:0; // 0 to show 2nd image
+  transition:0.2s; // a transition of 0.2 seconds to make it appear smooth
+}
